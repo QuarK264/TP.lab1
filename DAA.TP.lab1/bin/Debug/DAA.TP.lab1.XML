@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAA.TP.lab1</name>
+    </assembly>
+    <members>
+        <member name="T:DAA.TP.lab1.Software">
+            <summary>
+            Хранение информации о ПО и их сравнение
+            </summary>
+        </member>
+        <member name="M:DAA.TP.lab1.Software.#ctor">
+            <summary>
+            Конструктор класса, инициализирует стандартный экземпляр класса
+            </summary>
+        </member>
+        <member name="M:DAA.TP.lab1.Software.#ctor(System.String,DAA.TP.lab1.SoftwareType,System.Single)">
+            <summary>
+            Конструктор класса Software, инициализирующий ПО, введённое пользователем
+            </summary>
+            <param name="name">Имя. Фактиески используется имя, указанное пользователем</param>
+            <param name="type">Тип. Фактиески используется тип, указанный пользователем</param>
+            <param name="price">Цена. Фактиески используется цена, указанная пользователем</param>        
+        </member>
+        <member name="M:DAA.TP.lab1.Software.Compare(System.String,DAA.TP.lab1.SoftwareType)">
+            <summary>
+            Сравниваются имена и типы, если всё совпадает - ПО совпадают.
+            </summary>
+            <param name="SoftName">Имя введённого ПО</param>
+            <param name="SoftType">Тип введённого ПО</param>
+            <returns>Возвращает совпадают стандартное и введённое ПО или нет</returns>
+        </member>
+        <member name="M:DAA.TP.lab1.Software.Compare(System.String,DAA.TP.lab1.SoftwareType,System.Single)">
+            <summary>
+            Сравнение ПО по именам, типам и ценам
+            </summary>
+            <param name="SoftName">Имя введённого ПО</param>
+            <param name="SoftType">Тип введённого ПО</param>
+            <param name="SoftPrice">Цена введённого ПО</param>
+            <returns>Результат сравнения стандартного и пользовательского по именам, типам и ценам</returns>
+        </member>
+        <member name="M:DAA.TP.lab1.Software.ComparePrice(System.Single)">
+            <summary>
+            Сравнение цен
+            </summary>
+            <param name="SoftPrice">Цена введённого ПО</param>
+            <returns>Возвращает совпадают цены или нет</returns>
+        </member>
+        <member name="M:DAA.TP.lab1.Software.CompareNames(System.String)">
+            <summary>
+            Сравнение имён
+            </summary>
+            <param name="SoftName">Имя введённого ПО</param>
+            <returns>Возвращает совпадают имена или нет</returns>
+        </member>
+        <member name="M:DAA.TP.lab1.Software.CompareTypes(DAA.TP.lab1.SoftwareType)">
+            <summary>
+            Сравнение типов
+            </summary>
+            <param name="SoftType">Тип введённого ПО</param>
+            <returns>Возвращает совпадают типы или нет</returns>
+        </member>
+        <member name="P:DAA.TP.lab1.Software.Name">
+            <summary>
+            Имя ПО, используется в методах сравнения
+            </summary>
+        </member>
+        <member name="P:DAA.TP.lab1.Software.Price">
+            <summary>
+            Цена ПО, используется в методах сравнения
+            </summary>
+        </member>
+        <member name="P:DAA.TP.lab1.Software.SoftType">
+            <summary>
+            Тип ПО, используется в методах сравнения
+            </summary>
+        </member>
+        <member name="M:DAA.TP.lab1.Program.InputSoft">
+            <summary>
+            Ввод пользовательского ПО
+            </summary>
+            <returns>Результаты ввода</returns>
+        </member>
+        <member name="M:DAA.TP.lab1.Program.InputType">
+            <summary>
+            Реализует корректный ввод типа ПО.
+            </summary>
+            <returns>Возвращает один из возможных типов</returns>
+        </member>
+        <member name="M:DAA.TP.lab1.Program.InputPrice">
+            <summary>
+            Реализует корректный ввод цены
+            </summary>
+            <returns>Возвращает цену вещественного типа</returns>
+        </member>
+        <member name="M:DAA.TP.lab1.Program.Output(System.Boolean,System.String)">
+            <summary>
+            Осуществляется вывод результатов работы программы на экран.
+            </summary>
+            <param name="compNT">Результат сравнения стандартного и пользовательского ПО по типам и именам</param>
+            <param name="compNTP">Результат сравнения стандартного и пользовательского ПО по типам, именам и ценам</param>
+        </member>
+        <member name="M:DAA.TP.lab1.Program.RepeatProgram">
+            <summary>
+            Метод даёт возможность сравнить ещё одно ПО с текущим вызовом Main при утвердительном ответе
+            </summary>
+        </member>
+        <member name="M:DAA.TP.lab1.Program.Main">
+            <summary>
+            Точка входа в программу
+            </summary>
+        </member>
+        <member name="T:DAA.TP.lab1.SoftwareType">
+            <summary>
+            Перечисление типов ПО
+            </summary>
+        </member>
+    </members>
+</doc>
